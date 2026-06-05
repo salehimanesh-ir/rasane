@@ -42,22 +42,28 @@ body{
     box-shadow:0 0 25px rgba(255, 216, 77, 0.25);
 }
 
-.channel-logo{
-    width:110px;
-    height:110px;
-    margin:0 auto 15px;
-    border-radius:50%;
-    overflow:hidden;
-    border:3px solid #FFD700;
-    background:#000000;
+.channel-logo {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #FFD700;
+    background: #000000;
+    /* این خطوط کمک می‌کنند تا عکس بهتر مدیریت شود */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.channel-logo img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center;
+/* این بخش جدید است و برای جابه‌جا کردن عکس به سمت بالا اضافه شد */
+.channel-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;     /* باعث می‌شود عکس دایره را پر کند بدون اینکه دفرمه شود */
+    object-position: top;  /* بخش بالایی عکس را در مرکز دایره نشان می‌دهد */
 }
+
 
 .channel-name{
     font-size:24px;
@@ -194,7 +200,7 @@ body{
     <!-- معرفی کانال -->
     <div class="right">
         <div class="channel-logo">
-            <img src="https://media.hawzahnews.com/d/2025/12/24/4/2965958.jpg?ts=1766598712000">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/%D8%B5%D8%A7%D9%84%D8%AD%DB%8C_%D9%85%D9%86%D8%B4%D8%8C_%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1_%D8%B3%D8%A7%D8%A8%D9%82_%D9%82%D9%85_%287%29.jpg/500px-%D8%B5%D8%A7%D9%84%D8%AD%DB%8C_%D9%85%D9%86%D8%B4%D8%8C_%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1_%D8%B3%D8%A7%D8%A8%D9%82_%D9%82%D9%85_%287%29.jpg">
         </div>
         <div class="channel-name">حجت‌الاسلام‌ و المسلمین صالحی منش</div>
         <div class="channel-ads">
